@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>响应式网站</title>
+	<script src="http://www.zhangxinxu.com/study/js/mini/prefixfree.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.7.1.js"></script>
+	<script src="js-webshim/minified/polyfiller.js"></script> 
+	<script> 
+	// load and implement all unsupported features 
+	$.webshims.polyfill(); 		
+	// or only load a specific feature
+	//webshims.polyfill('forms es5');
+    </script>
+	<script src="js/index.js"></script>
+</head>
+<body id="quit">
+<div id="wrapper">
+	<header>
+	    <a href="/"><div id="logo">And the winner is<span>n't...</span></div></a>
+		<nav role="navigation">
+			<ul id="mainNav">
+				<li><a href="index.html">Why?</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="offline.html">Offline</a></li>
+				<li><a href="redemption.html">Redemption</a></li>
+				<li><a href="video.html">Videos/clips</a></li>
+				<li><a href="3Dquiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</header>
+
+		<div id="content" role="main">
+		<h1>the hot or not</h1>
+		<h2>FORGET WHAT THE CRITICS SAY, WHICH DO YOU THINK IS HOT OR NOT..?NOTE: AT THE TIME OF WRITING (APRIL 2012), 3D TRANSFORMATIONS DON'T WORK WELL WITH PROPORTIONAL DIMENSION LAYOUTS.</h2>
+		<section class="Qcontainer">
+            <div class="film">
+            <div class="face front">
+                <img src="images/goonies.jpg" alt="The Goonies" />
+            </div>
+                <div class="face back"><h5>HOT!</h5></div>
+            </div>             
+        </section> 
+
+		<section class="Qcontainer">
+            <div class="film">
+            <div class="face front">
+                <img src="images/munich.jpg" alt="The Goonies" />
+            </div>
+                <div class="face back"><h5>HOT!</h5></div>
+            </div>             
+        </section> 
+
+		<section class="Qcontainer">
+            <div class="film">
+            <div class="face front">
+                <img src="images/kingKong.jpg" alt="The Goonies" />
+            </div>
+                <div class="face back"><h5>HOT!</h5></div>
+            </div>             
+        </section>    
+
+	</div>
+	
+	<aside>
+		<section role="complementary">
+			<div class="sideBlock unSung">
+				<h1>Unsung heroes...</h1>
+				<a href="#"><img src="images/midnightRun.jpg" alt="Midnight Run" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="images/wyattEarp.jpg" alt="Wyatt Earp" /><span class="moreInfo">more info</span></a>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<section role="complementary">
+			<div class="sideBlock overHyped">
+				<h1>Overhyped nonsense...</h1>
+				<a href="#"><img src="images/moulinRouge.jpg" alt="Moulin Rouge" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="images/kingKong.jpg" alt="King Kong" /><span class="moreInfo">more info</span></a>
+				<div class="clear"></div>
+			</div>
+		</section>
+	</aside> 
+	<div style="clear: both"></div>
+	<footer role="contentinfo">
+		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a>. </span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP file</a></span></p> 
+	</footer> 
+</div>
+</body>
+</html>

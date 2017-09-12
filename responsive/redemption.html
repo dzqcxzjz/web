@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>响应式网站</title>
+	<script src="http://www.zhangxinxu.com/study/js/mini/prefixfree.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.7.1.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/modernizr.js"></script>
+</head>
+<body id="quit">
+<div id="wrapper">
+	<header>
+	    <a href="/"><div id="logo">And the winner is<span>n't...</span></div></a>
+		<nav role="navigation">
+			<ul id="mainNav">
+				<li><a href="index.html">Why?</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Offline</a></li>
+				<li><a href="redemption.html" style="text-decoration: underline;">Redemption</a></li>
+				<li><a href="#">Videos/clips</a></li>
+				<li><a href="3Dquiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div id="content" role="main">
+    <form id="redemption" method="post">
+    	<hgroup>
+    		<h1>Oscar Redemption</h1>
+    		<h2>Here's your chance to set the record straight: tell us what
+            year the wrong film got nominated, and which film <b>should</b>
+            have received a nod...</h2>
+    	</hgroup>
+    	<fieldset>
+    	<legend>About the offending film (part 1 of 3)</legend>
+    	<div>
+    		<label for="flim">The film in question?</label>
+    		<input id="flim" name="flim" type="text" placeholder="e.g. King Kong" required class="
+    		form-ui-invalid">
+    	</div>
+    	<div>
+    		<label for="yearOfCrime">Year Of Crime</label>
+    		<input id="yearOfCrime" name="yearOfCrime" type="number" min="1929" max="2015" required class="normal">
+    	</div>
+    	<div>
+    		<label for="awardWon">Award Won</label>
+    		<input id="awardWon" name="awardWon" type="text" list="awards" required class="
+    		form-ui-valid normal">
+    		<datalist id="awards">
+    			<select>
+    				<option value="Best Picture"></option>
+    				<option value="Best Director"></option>
+    				<option value="Best Adapted Screenplay"></option>
+    				<option value="Best Original Screenplay"></option>
+    			</select>
+    		</datalist>
+    	</div>
+    	<div>
+    		<label for="whyItsWrong">Tell us why that's wrong?</label>
+    		<textarea name="whyItsWrong" id="whyItsWrong" placeholder="I fell asleep within 20 minutes..." required class="form-ui-invalid"></textarea>
+    	</div>    	
+    	<div>
+    		<label for="howYouRateIt">How you rate it (1 is woeful, 10 is awesomesauce)</label>
+    		<input id="howYouRateIt" name="howYouRateIt" type="range" min="1" max="10" value="5" onchange="showValue(this.value)" class="form-ui-valid">
+    		<span id="range">5</span>
+    	</div>
+    	<script>
+    		function showValue(newValue){
+    			var oRange=document.getElementById("range");
+    			oRange.innerHTML=newValue;
+    		}
+    	</script>    	
+    	</fieldset>
+
+    	<fieldset>
+    	<legend>About the offending film (part 2 of 3)</legend>
+    	<div>
+    		<label for="filmGood">The film that should have won?</label>
+    		<input id="filmGood" name="filmGood" type="text" placeholder="e.g. Cable Guy" 
+    		required class="form-ui-invalid">
+    	</div>
+    	<div>
+    		<label for="whyItShould">Tell us why it should have won?</label>
+    		<textarea id="whyItShould" name="whyItShould" type="text" placeholder="Hello? CAABBLLLLE GUUUY!!!!!" required class="form-ui-invalid" class="form-ui-invalid"></textarea>
+    	</div>    	
+    	<div>
+    		<label for="howYouRateThis">How you rate it (1 is woeful, 10 is awesomesauce)</label>
+    		<input id="howYouRateThis" name="howYouRateThis" type="number" min="1" max="10"  required class="form-ui-valid normal">
+    	</div>
+    	</fieldset>
+
+    	<fieldset>
+    	<legend>About the offending film (part 3 of 3)</legend>
+    	<div>
+    		<label for="name"></label>
+    		<input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="Dwight Schultz" required class="form-ui-invalid">
+    	</div>
+    	<div>
+    		<label for="color">Your favorite color</label>
+    		<input id="color" name="color" type="color" class="form-ui-valid not"> 
+    	</div>
+    	<div>
+    		<label for="date">Date/Time</label>
+    		<input id="date" class="pickDate form-ui-valid not" type="date" name="date">
+    	</div>
+    	<div>
+    		<label for="tel">Telephone (so we can berate you if you're wrong)</label>
+    		<input id="tel" name="tel" type="tel" placeholder="1-234-546758" autocomplete="off" 
+    		required class="form-ui-invalid">
+    	</div>
+    	<div>
+    		<label for="email">Your Email address</label>
+    		<input id="email" name="email" type="email" placeholder="dwight.schultz@gmail.com" 
+    		required class="form-ui-invalid">
+    	</div>
+    	<div>
+    		<label for="web">Your Web address</label>
+    		<input id="web" name="web" type="url" placeholder="www.mysite.com" class="form-ui-valid">
+    	</div>
+    	</fieldset>   
+        <input type="submit" id="submit" value="Submit Redemption">
+    </form>
+	</div>
+	<aside>
+		<section role="complementary">
+			<div class="sideBlock unSung">
+				<h1>Unsung heroes...</h1>
+				<a href="#"><img src="images/midnightRun.jpg" alt="Midnight Run" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="images/wyattEarp.jpg" alt="Wyatt Earp" /><span class="moreInfo">more info</span></a>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<section role="complementary">
+			<div class="sideBlock overHyped">
+				<h1>Overhyped nonsense...</h1>
+				<a href="#"><img src="images/moulinRouge.jpg" alt="Moulin Rouge" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="images/kingKong.jpg" alt="King Kong" /><span class="moreInfo">more info</span></a>
+				<div class="clear"></div>
+			</div>
+		</section>
+	</aside> 
+	<div style="clear: both"></div>
+	<footer role="contentinfo">
+		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a>. </span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP file</a></span></p> 
+	</footer> 
+</div>
+</body>
+</html>

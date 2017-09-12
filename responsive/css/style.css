@@ -1,0 +1,461 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	transition:all 1s;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+html{
+	font-size: 10px;
+}
+img{
+	max-width: 100%;
+}
+body{
+	box-shadow: inset 0 0 30px #000000;
+}
+
+.clear{
+	clear: both;
+}
+#wrapper{
+	margin: 0 auto;
+	width: 96%;
+	background: url(../images/buntingFW.png) repeat-x;
+	max-width: 1414px;
+}
+#wrapper header{
+	margin: 0 1.04%;
+	width: 97.91%;
+}
+#wrapper #logo{
+	padding: 100px 0 50px; 
+	text-transform: uppercase;
+	font-size: 4.6rem;
+}
+#wrapper #logo span{
+	color: #D0D0D0;
+}
+#wrapper #logo {
+	color:#000;
+}
+nav{
+	margin-bottom: 45px;
+	margin-top: 26px;
+	margin-left: -1.04%;
+	padding-left: 1.04%;
+	padding-right: 1.04%;
+	width: 97.91%;
+	/*background: #bfbfbf url(../images/atwiNavBg.png) repeat-x;*/
+	border-bottom: 4px  double #bfbfbf;
+	display: table;
+}
+nav ul{
+	display: table-row;
+}
+nav ul li{
+	display: table-cell;
+	text-align: center;
+	margin-right: 5.2%;
+}
+nav ul li:first-child{
+	text-align: left;
+}
+nav ul li:last-child{
+	text-align: right;
+}
+nav ul li:nth-child(even) a{
+	color:#fe0208;
+}
+nav ul li a{
+	height: 42px;
+	line-height: 42px;
+	color:#000;
+	font-size: 2.7rem;
+	text-transform: uppercase;
+	display: block;/*webkit浏览器要实现transform需要使该元素为块级*/
+}
+nav ul li a:hover{
+	animation: warning 1.5s infinite ease-in;
+}
+aside{
+	margin: 0 1.041667%;
+	float: left;
+	width: 22.616667%; 
+	border-right: 2px solid gray;
+	background: linear-gradient(90deg,#ffffff 0%,#e4e4e4 50%,#ffffff 100%);
+	/*background: repeating-linear-gradient(90deg,#fff 0px,hsla(0,1%,50%,0.1) 5px);*/
+}
+aside a{
+	display: block;
+	width: 45%;
+	float: left;
+}
+aside a:nth-child(2){
+	margin-right:5%;
+}
+aside .sideBlock h1{
+	font-size: 2.2rem;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+aside a img{
+	box-shadow: 0 3px 5px #444444;
+}
+aside a:nth-child(odd) img{
+	transform: rotate(3deg);
+	animation: swing 0.1s 5 0.5s ease-in;
+}
+aside a:nth-child(even) img{
+	transform: rotate(-3deg);
+	animation: swing 0.1s 5 0.7s ease-in;
+}
+.moreInfo{
+	padding:  5px 0;
+	color:#5c5959;
+	text-shadow: 0px 1px 0px #fff;
+	display: block;
+	border:1px solid #999;
+	text-align: center;
+	font-size: 1.6rem;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+#content{
+	margin: 0 1.041667%;
+	float: right;
+	width: 72.816667%;
+	background: radial-gradient(center, ellipse cover, #ffffff 72%, #dddddd 100%); 
+}
+#content .oscarMain{
+	width: 28.232%;
+	max-width: 202px;
+	margin-right: 1%;
+}
+#content h1{
+	font-size: 10rem;
+	text-transform: uppercase;
+	text-shadow: 0px 0.01em #fff,0.04em 0.04em  #dad7d7;
+	font-weight: 400;
+}
+#content h1 em{
+	font-size: 5rem;
+	color:#504e4e;
+	display: block;
+	text-shadow:none;
+}
+#content h2{
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+#content p{
+	font-size: 3rem;
+	line-height: 4rem;
+	color:#757474;
+	font-weight:200;
+}
+#content p em{
+   text-decoration: underline;
+}
+#content a.button{
+	font-size: 3rem;
+	background: #b01c20;
+	color:#fff;
+	margin-top: 40px;
+	padding: 3%;
+	float: left;
+	border-radius: 8px;
+	text-shadow: 0px 1px black;
+	border: 1px solid #bfbfbf;
+	box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);
+	background: linear-gradient(90deg, #b01c20 0%, #f15c60 100%); 
+}
+#content a.button span{
+	font-size: 1.3em;
+}
+#content a.button:hover{
+    border: 1px solid #000000;
+    color:#000000;
+    text-shadow: 0px 1px  #fff;
+}
+#redemption hgroup{
+    margin-bottom: 20px;
+}
+#redemption h1{
+	font-size: 8rem;
+	text-transform: uppercase;
+	text-shadow: 0px 1px #fff,4px 4px #dad7d7;
+	font-weight: 400;
+}
+#redemption h2{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+#redemption fieldset {
+	border: 1px dotted #ccc;
+	padding: 2%;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px hsla(0,0%,16.6667%,0.3);
+}
+#redemption legend{
+	font-size: italic;
+	color:#000;
+	font-size: 0.8em;
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+#redemption div{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+#redemption span#range{
+	float: left;
+	font-size: 3em;
+	width: 100%;
+	color:red;
+	clear: both;
+	text-align: center;
+}
+#redemption label{
+	width: 40%;
+	float: left;
+}
+#redemption input{
+	height: 20px;
+	width: 40%;
+	float: right;
+}
+#redemption textarea{
+	width: 40%;
+	float: right;
+}
+#redemption #submit{
+height: 34px;
+font-size: 2rem;
+text-transform: uppercase;
+background: #b01c20;
+border-radius: 8px;
+color:#fff;
+float: right;
+margin-bottom: 10px;
+margin-top: 10px;
+box-shadow: 5px 5px 5px hsla(0,0%,26.666667%,0.8);
+text-shadow: 0px 1px black;
+border:1px solid #bfbfbf;
+}
+#redemption #submit:hover{
+	cursor: pointer;
+}
+input:not([type="range"]),textarea,select{
+	border:1px solid #bfbfbf;
+	padding: 0.2em;
+	font-size: 1.1em;
+	line-height: 1.2em; 
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 2px 2px 5px hsla(0,0%,16.6667%,0.1);
+}
+input:required{
+	border: 1px solid rgba(253, 8, 8, 0.29);
+}
+input:focus:invalid{
+	background: url('../images/cross.png') no-repeat right center;
+}
+input:focus:valid {
+ background: url('../images/tick.png') no-repeat right center;
+} 
+input.normal:focus:invalid{
+    background: url('../images/cross.png') no-repeat left center;
+}
+input.normal:focus:valid{
+    background: url('../images/tick.png') no-repeat left center;
+}
+input.not:focus:invalid{
+	background: #fff;
+}
+input.not:focus:valid{
+	background: #fff;
+}
+
+.Qcontainer { 	
+  height: 100%;
+  width: 28%;
+  position: relative;
+  perspective: 200;
+  float: left;
+  margin-right: 2%;
+}
+.film {
+  width: 100%;
+  height: 15em;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+.Qcontainer:hover .film {
+	transform: rotateY(180deg);
+}
+.face {
+	position: absolute;
+	backface-visibility: hidden;
+}
+.back {
+  width: 73%;
+  height: 127%;
+  transform: rotateY(180deg);
+  background: #3b3b3b;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  padding: 15%;
+}
+.back h5{
+	font-size: 6rem;
+	color:#f2050b;
+	text-align: center;
+	animation: warning 1.5s infinite ease-in;
+}
+
+.front {
+	z-index: 5;
+}
+.Qcontainer:hover .front {
+	z-index: 0;
+}
+
+footer{
+	margin: 0 1.04%;
+	width: 97.91%;
+	clear: both;
+	border-top: 4px  double #bfbfbf;
+	margin-top: 40px;
+	background: url(../images/buntingFWinvert.png) repeat-x bottom left;
+}
+footer p{
+	padding-bottom: 68px;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 1.2rem;
+	color:#757474;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+footer p span a{
+	color:#bfbfbf;
+	text-decoration: underline;
+}
+@keyframes swing{
+	form{
+		transform: rotate(3deg);
+	}
+	20%{
+		transform: rotate(7deg);
+	}
+	60%{
+		transform: rotate(10deg);
+	}
+	80%{
+		transform: rotate(7deg);
+	}
+	to{
+		transform: rotate(3deg);
+	}		
+}
+@keyframes warning {
+    0%{
+    	text-shadow: 0 0 4px #000;
+    }
+    50%{
+    	text-shadow: 0 0 20px #000;
+    }
+    100%{
+    	text-shadow: 0 0 4px #000;
+    }        
+}
+@media screen and (max-width: 768px) {
+	#wrapper{
+		width: 100%;
+	}
+	#logo{
+		text-align: center;
+	}
+	header,nav,footer{
+		width: 97.39%;
+	}
+	aside{
+		width: 100%;
+		border:none;
+	}
+	#content{
+		width: 100%;
+	}
+	body{
+	box-shadow:none;
+	font-size: 6px;
+	width: 96%;margin: 2%;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+	a.button{
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1080px) {
+   html{
+   	font-size: 8.149px;
+   }
+}
+@media screen and (min-width: 805px) and (max-width: 1000px) {
+   html{
+   	font-size: 7.407px;
+   }
+   #content p{
+   	line-height: 3rem;
+   }
+   #content a.button{
+   	margin-top: 20px;
+   }
+}
+@media screen and (min-width: 769px) and (max-width: 804px) {
+   html{
+   	font-size: 6.5185px;
+   }
+      #content p{
+   	line-height: 2.5rem;
+   }
+   #content a.button{
+   	margin-top: 15px;
+   }
+}
+@media screen and (max-width: 414px) {
+	html{
+		font-size: 6px;
+	}
+	nav{
+		display: block;
+	}
+	ul{
+		display: block;
+	}
+	nav ul li{
+		display: block;
+		text-align: left;
+		font-weight: bold;
+	}
+	nav ul li:last-child{
+		text-align: left;
+	}
+	#wrapper #logo{
+		padding: 100px 0 20px;
+	}
+
+}
